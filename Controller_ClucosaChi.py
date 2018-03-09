@@ -4,6 +4,7 @@ import GlucosaChi
 
 import asyncio
 
+from flask_cors import CORS
 from wasp_eureka import EurekaClient
 
 # no spaces or underscores, this needs to be url-friendly
@@ -39,7 +40,7 @@ except:
     e=1
 
 app = Flask(__name__)
-
+CORS(app)
 @app.route('/api/bi/prediction', methods=['GET'])
 def heatmaps():
     #user = request.args.get('user')

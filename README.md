@@ -9,6 +9,8 @@ This repository contains the business intelligence microservice for the FIWOO pl
 
 ### Developing
 - Run `pip install flask requests` to install Flask dependences.
+- Run `pip install flask-cors` to install Flask-Cors dependencies.
+
 
 ## Build & Development
 Run `python Controller_Controller_ClucosaChi.py` to start the microservice.

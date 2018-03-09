@@ -2,7 +2,7 @@ FROM python:3
 
 WORKDIR /opt
 
-RUN pip install flask requests wasp-eureka
+RUN pip install flask requests wasp-eureka flask-cors
 
 COPY GlucosaChi.py /opt/
 
